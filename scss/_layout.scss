@@ -1,0 +1,20 @@
+.l-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000090;
+  position: relative;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-container {
+  width: 1100px;
+  height: 600px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}

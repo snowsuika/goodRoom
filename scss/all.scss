@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'reset';
+
+//元素、模組
+@import 'components';
+@import 'animate';
+
+//工具用樣式
+@import 'tool';
+
+//其他頁面
+@import 'layout';
+
+//其他頁面
+@import 'page/index'; 
+@import 'page/room'; 

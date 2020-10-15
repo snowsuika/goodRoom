@@ -1,0 +1,258 @@
+.p-room{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.p-room-bookAction{
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  a{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: #38470B;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    &::before{
+      content: 'ㄑ';
+      
+    }
+  }
+  &__box{
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    width: 100%;
+    &__price{
+      font-family: 'Open Sans';
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      span{
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 5px;
+        margin-left: 20px;
+      }
+    }
+    &__Btn{
+      background-color: #38470B;
+      width: 252px;
+      color: #fff;
+      font-size: 20px;
+      &:hover{
+        cursor: pointer;
+        background-color: #949C7C
+      }
+    }
+  }
+  .m-carousel__bg{
+    cursor: pointer;
+  }
+}
+
+.p-room__content{
+  margin-left: 40%;
+  width: 670px;
+  padding: 105px 30px;
+  height: 100%;
+  &__title{
+    margin-bottom: 38px;
+    &__name{
+      font-size: 40px;
+      line-height: 55px;
+    }
+    &__spec{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &__opentimePrice{
+    margin-bottom: 35px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__checkinInfo{
+    margin-bottom: 45px;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+  &__roomQueryTitle{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  &__chooseBookDate{
+    border: 1px solid #38470B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+  }
+  &__resetChooseBookDate{
+    color: $color-lightr;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 30px;
+  }
+}
+
+.p-bookingModal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  h2{
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    position: relative;
+    &::after{
+      content: "";
+    position: absolute;
+    width: calc( 100% - 170px );
+    height: 1px;
+    background-color: $color-lightr;
+    top: 50%;
+    left: 0%;
+    margin-left: 80px;
+    }
+  }
+&__checkinInput{
+  width: 40%;
+  color: $color-white;
+  background-color: $color-primary;
+  padding: 50px 63px;
+
+  &__total{
+    &__liveDays{
+      color: $color-lightr;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    &__totalPrice{
+      text-align: right;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      span{
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+      }
+    }
+    
+  }
+  &__btn{
+    color: $color-white;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    border: 1px solid $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+    &:hover{
+      background-color: $color-lightr;
+      border: 1px solid $color-lightr;
+    }
+  }
+ &__dontPay{
+   text-align: center;
+   font-size: 12px;
+   line-height: 18px;
+   margin-top: 18px;
+ }
+}
+&__checkinInfo{
+  width: 60%;
+  overflow: auto;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  &__descriptionShort{
+    margin-bottom: 27px;
+  }
+  &__amenities{
+    .m-amenities__list{
+      &__item{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+        p{
+          color: $color-lightr;
+          font-size: 10px;
+        }
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+   
+  }
+  &__info{
+    li{
+      font-size: 12px;
+      line-height: 26px;
+      font-weight: 300;
+    }
+  }
+}
+}
+
+.p-bookingResult{
+  background-color: $color-primary;
+  color: $color-white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__resultText{
+    font-size: 50px;
+    line-height: 74px;
+    padding: 41px 0px;
+  }
+  &__description{
+    max-width: 468px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+
+
+

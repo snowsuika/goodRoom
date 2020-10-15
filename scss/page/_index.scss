@@ -1,0 +1,89 @@
+
+.p-carouselBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    .m-carousel__carouselCircle__dot{
+        border: 1px solid $color-white;
+    }
+    .m-carousel__carouselCircle .--isActive{
+        background-color: $color-white;
+    }
+
+}
+
+.p-contact {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    color: #fff;
+
+    &__content {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+        p {
+            padding: 3px 0;
+            &:first-child{
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+
+        }
+    }
+}
+
+.p-gallery {
+    width: 825px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        position: relative;
+        width: 275px;
+        height: 275px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &__photo {
+            position: absolute;
+            display: block;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__roomName {
+            position: absolute;
+            background-color: rgba(56, 71, 11, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            opacity: 0;
+            -webkit-transition: opacity .3s ease-in;
+            transition: opacity .3s ease-in;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

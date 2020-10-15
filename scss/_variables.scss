@@ -1,0 +1,32 @@
+// 顏色變數
+$color-white:#ffffff;
+$color-black:#000000;
+$color-primary:#38470B;
+$color-lightr:#949C7C;
+$color-inputText:#6A6A6A;
+
+// 字體大小及字型
+$text-base:1rem; //16px
+$text-lg:1.25rem; //20px //$font-size_up1
+$text-xl:1.5rem; //24px //$font-size_up2
+$text-xxl:2.25rem; //36px
+$font-default:'Helvetica Neue',
+'PingFang TC';
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 300;
+    src: url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    src: url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
