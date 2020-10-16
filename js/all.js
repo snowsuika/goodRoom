@@ -29,14 +29,14 @@ function getHouseData() {
       for (let i = 0; i < houseDateLen; i++) {
         hostelData.push(JSONData.items[i])
       }
-      if (path == '/index.html') {
+      if (path == '/goodRoom/index.html') {
         showLoading()
         printGalleryPhoto(hostelData);
         let carouselImgUrls = ['images/housePhoto/housePhoto_1.jpeg', 'images/housePhoto/housePhoto_2.jpeg', 'images/housePhoto/housePhoto_3.jpeg', 'images/housePhoto/housePhoto_4.jpeg'];
         createCarouselDOM(carouselImgUrls)
         showCarousel() //背景輪播
         
-      } else if (path == '/room.html') {
+      } else if (path == '/goodRoom/room.html') {
         let roomId = window.localStorage.getItem('roomId');
         getRoomData(JSON.parse(roomId))
       }
