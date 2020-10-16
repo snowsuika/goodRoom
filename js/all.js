@@ -29,7 +29,7 @@ function getHouseData() {
       for (let i = 0; i < houseDateLen; i++) {
         hostelData.push(JSONData.items[i])
       }
-      if (path == '/goodRoom/index.html') {
+      if (path == '/goodRoom/') {
         showLoading()
         printGalleryPhoto(hostelData);
         let carouselImgUrls = ['images/housePhoto/housePhoto_1.jpeg', 'images/housePhoto/housePhoto_2.jpeg', 'images/housePhoto/housePhoto_3.jpeg', 'images/housePhoto/housePhoto_4.jpeg'];
